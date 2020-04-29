@@ -1,0 +1,115 @@
+body{
+    padding-top : 60px;
+}
+
+.banner{
+        display: flex;
+        height: 300px;
+        background-image: url(./pictures/header-image.jpg);
+        background-size: cover;
+
+        div{
+            padding-top: 10px;
+            background-color: rgba(255,255,255,.8);
+            margin: auto;
+            text-align: center;
+            width: 90%;
+            height: 150px;
+            font-family: 'Lato', sans-serif;
+
+            p{
+                font: {
+                    size: 1.1rem;
+                    family:' Nothing You Could Do', cursive;
+                };
+            } 
+    //========Media====================
+    @include md{
+        p{
+        font-size: 1.3rem;
+        }
+    }
+    }
+    
+    @include lg{
+        height: 500px;
+    }
+
+    @include xl{
+        div{
+            height: 250px;
+            padding-top: 40px;
+
+            h2{
+                font-size: 3rem;
+            }
+            
+            p, button{
+                font-size: 1.5rem;
+            }
+            
+        }
+    }
+}
+
+div + h2{
+    text-align: center;
+    margin: 50px;    
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+
+    h4{
+        color: $siteColor;
+    }
+
+    h3, h4{
+        margin: 10px 0 20px 0;
+        letter-spacing: .2rem;
+        text-align: center;
+        font: {
+            family: 'Lato', sans-serif;
+            size: 1rem;
+        };
+    }
+
+    div:last-child img{
+        &:hover{
+            transition: all 0.8s;
+            opacity: 0.33;
+        }   
+    }
+    //========Media====================
+
+    @include md{
+    
+        h3, h4{
+        font-size: 1.3rem;
+        }
+    }
+} 
+
+@include lg{
+
+    .container{
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div{
+            width: 45%;
+            margin: 15px;
+        }
+    }
+}
+
+@include xl{
+
+    .container div{
+            margin: 10px;
+            width: 30%;
+        }
+    }
+

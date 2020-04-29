@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/3ed253a8e9.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>       
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>       
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+        <title>Orinoco</title>
+    </head>
+
+    <body>
+        <!-------------------Header------------------------->
+        <header>
+            <div>
+                <a href="#" id="open"><i class="fas fa-bars fa-lg"></i></a>
+                <a href="index.html"><img src="/pictures/logo.jpg" alt="logo"></a>
+                <a href="bag.html"><i class="fas fa-cart-plus fa-lg"></i></a>
+            </div>
+        </header>
+        <!--------------------Main-------------------------->
+        <main>
+            <div class="product1">
+        <!--------------------bootsrap carousel-------------------------->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/pictures/oak_1.jpg" class="d-block w-100" alt="Table basse en bois">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/pictures/oak_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/pictures/oak_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Avant</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Après</span>
+                        </a>
+                </div>
+                <!--------------------bootsrap carousel-------------------------->
+                    <h3>Table en sapin massif</h3>
+                    <h4>Description</h4>
+                    <p>Le bois de ce meuble est certifié FSC. Ce label garantit que le bois est issu d’une forêt gérée de façon responsable : vous aussi, participez à la préservation des forêts et de la biodiversité en choisissant ce produit.
+                    <p>Troquez votre vieille table pour <strong>la table en sapin massif.</strong> Authentique, elle mise sur la noblesse du bois pour apporter un esprit montagnard dans votre salon. On aime : sa structure rectangulaire et ses lignes sobres qui font de cette <strong>table à l'esprit montagnard</strong> un must have pour tous les intérieurs à l'esprit loft. Il ne manque plus que le canapé en cuir, et le tour est joué !</p>                    
+                    <h4>299.99€</h4>
+                <!--------------------bootsrap form-------------------------->
+                <div class="prices">
+                    <form class="form-inline">
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Choisissez votre finition</label>
+                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                <option value="1" selected>Incolore</option>
+                                <option value="2">Teck</option>
+                                <option value="3">Chêne moyen</option>
+                                <option value="3">Chêne foncé</option>
+                            </select>
+                    </form>
+                    
+                    <form class="form-inline">
+                        <label class="m-1 mr-2" for="inlineFormCustomSelectPref">Quantité</label>
+                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="3">4</option>
+                            </select>
+                    </form>
+                    <div>
+                        <a href="bag.html"><button type="button" class="btn btn-warning">Ajouter au panier</button></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+                <!-----------------Footer---------------------->
+        <footer>
+            <p>Copyright©2020 Orinoco <br>
+            Made with <i class="fas fa-heart"></i> in France. v1.0</p>
+        </footer>
+    </body>
+</html>

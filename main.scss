@@ -1,0 +1,13 @@
+@import "./sass/base/reset";
+@import "./sass/base/breakpoints";
+@import "./sass/base/media";
+
+@import "./sass/utils/variables";
+@import "./sass/utils/mixins";
+
+@import "./sass/layouts/header_footer";
+
+@import"./sass/pages/index";
+@import"./sass/pages/products";
+@import"./sass/pages/bag";
+@import"./sass/pages/confirm";

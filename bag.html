@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/3ed253a8e9.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>       
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>       
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+        <title>Orinoco | Panier</title>
+    </head>
+
+    <body>
+        <!-------------------Header------------------------->
+        <header>
+            <div>
+                <a href="#" id="open"><i class="fas fa-bars fa-lg"></i></a>
+                <a href="index.html"><img src="/pictures/logo.jpg" alt="logo"></a>
+                <a href="bag.html"><i class="fas fa-cart-plus fa-lg"></i></a>
+            </div>
+        </header>
+        <!--------------------Main-------------------------->
+        <main>
+            <div class="banner-bag">
+                <div>
+                    <h2>Votre panier</h2>
+                    <p>Ne vous inquiétez pas, nous protegeons vos colis</p>
+                </div>
+            </div>
+        <!--------------------Container---------------------->
+            <div class="container-bag">
+                <h3>Récapitulatif de votre commande</h3>
+        <!--------------------Table-------------------------->
+                <table class="table">
+                    <thead class="tableHead">
+                        <tr class="tableHeadTitle">
+                            <th class="">Produit</th>
+                            <th class="">Prix</th>
+                            <th class="">Quantité</th>
+                            <th class="">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tableBody">
+                        <tr class="tableBodyContent">
+                            <td class="">Table basse en sapin massif</td>
+                            <td class="">299.99€</td>
+                            <td class="">1</td>
+                            <td class="">299.99€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <h3>A qui doit-on livrer ?</h3>
+    <!--------------------Form bootstrap---------------------->
+                <form>
+                    <div class="form-group col-md-2">
+                        <label for="inputState"></label>
+                        <select id="inputState" class="form-control">
+                            <option>M.</option>
+                            <option>Mme.</option>
+                            <option>Mlle.</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress"></label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Numéro et nom de la rue">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2"></label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="N°d'apt, étage, code (facultatif)">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputZip"></label>
+                        <input type="text" class="form-control" placeholder="Code postal" id="inputZip">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputState"></label>
+                        <select id="inputState" class="form-control">
+                            <option>Auvergne-Rhône-Alpes</option>
+                            <option>Bourgogne-Franche-Comté</option>
+                            <option>Bretagne</option>
+                            <option>Centre-Val de Loire</option>
+                            <option>Corse</option>
+                            <option>Grand Est</option>
+                            <option>Hauts-de-France</option>
+                            <option>Île-de-France</option>
+                            <option>Normandie</option>
+                            <option>Nouvelle-Aquitaine</option>
+                            <option>Occitanie</option>
+                            <option>Pays de la Loire</option>
+                            <option>Provence-Alpes-Côte d'Azur</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputZip"></label>
+                        <input type="text" class="form-control" placeholder="Ville" id="inputCity">
+                    </div>
+                    <h3>Avez vous un compte chez nous ? </h3>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4"></label>
+                            <input type="email" class="form-control" placeholder="Email" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4"></label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Mot de passe">
+                        </div>
+                    <div>
+                        <a href="confirm.html"><button type="submit" class="btn btn-warning">Valider</button></a>
+                    </div>
+                </form>
+            </div>
+    </main>
+        <!-----------------Footer---------------------->
+        <footer>
+            <p>Copyright©2020 Orinoco <br>
+            Made with <i class="fas fa-heart"></i> in France. v1.0</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+.banner-confirm{
+    @extend .banner;
+    margin: 100px 25px 50px 25px;
+    background-image: url(./pictures/thankYou.jpg);
+    display: flex;
+    flex-direction: column;
+    
+
+    div{
+        padding-top: 35px;
+        height: 270px;
+    }
+
+    div + div{
+    padding-top: 40px;
+    }
+
+ /*=======media=========*/
+ @include xl{
+    height: 700px;
+
+ }
+}
+
+.confirmEnd{
+    display: flex; 
+    flex-direction: column;
+
+    h2{
+        font: {
+            family: 'Lato', sans-serif;
+            size: 1.1rem;
+        }
+        text-align: center;
+    }
+    
+    a{
+        margin: auto;
+        padding-bottom: 20px;
+    }
+}
+
+
+

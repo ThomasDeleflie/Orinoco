@@ -1,0 +1,87 @@
+@mixin product {
+    #carouselExampleIndicators{
+        width: 90%;
+        padding-top: 30px;
+        margin: auto;
+
+        .carousel-indicators{
+            z-index: 1;
+        }
+
+        @include lg{
+            width: 80%;
+        }
+
+        @include xl{
+            padding-top: 80px;
+        }
+
+    }
+
+    h3, h4
+    {
+        font: {
+            family: 'Lato', sans-serif;
+            size: 1.2rem;
+        }; 
+        text-align: center;
+        margin : 30px 0 0 0;
+    }
+
+    p + h4{
+        color: $siteColor;        
+        margin-bottom: 10px;
+    }
+
+    p{
+        padding-top: 30px;
+        text-align: justify;
+        margin: 0 20px 0 20px;
+        font-size: 0.7rem;
+    }
+
+
+.prices{
+    display: flex; 
+    flex-direction: column;
+
+    form + div{ 
+        margin: auto;
+        padding-bottom: 30px;
+    }
+
+    form .form-inline{
+        margin: 0 20px;
+        flex-flow: nowrap;
+    }
+
+    form + div{
+        padding-top: 20px;
+    }
+}
+    //========Media====================
+
+@include md{
+    p, h4, h3, button{
+        font-size: 1.1rem;
+    }
+}
+
+@include lg{
+    width: 90%;
+    margin: auto;
+
+    .prices{
+        flex-direction: row;
+    }
+}
+
+@include xl{
+    width: 60%;
+    
+    p{
+        font-size: 1.2rem;
+    }
+}
+}
+

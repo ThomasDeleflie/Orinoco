@@ -1,0 +1,50 @@
+.banner-bag{
+    @extend .banner;
+    background-image: url(./pictures/delivery.jpg);
+
+    div{
+        padding: 30px;
+    }
+}
+
+.container-bag{
+    margin: 10px;
+
+    h3{
+        padding: 20px;
+        font: {
+            family: 'Lato', sans-serif;
+            size: 1.3rem;
+        }
+        text-align: center;
+    }
+
+    .table td{
+        padding: 0.30rem;
+    }
+
+    div:last-child{
+        margin: auto;
+        padding-top: 10px;
+    }
+}
+
+
+form{    
+    display: flex;
+    flex-direction: column;
+
+    .form-group{
+        margin-bottom : 0;
+    }
+}
+
+    //========Media====================
+@include lg{
+    
+    .form-group{
+        margin: auto;
+        width: 50%;
+    }
+}
+
